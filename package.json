@@ -1,0 +1,41 @@
+{
+  "name": "async-barrier",
+  "version": "1.0.0",
+  "description": "Helper function to increase your expresiveness when async/await testing",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest",
+    "precommit": "lint-staged"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/drpicox/async-barrier.git"
+  },
+  "keywords": [
+    "barrier",
+    "async",
+    "await",
+    "testing",
+    "helper",
+    "synchronization"
+  ],
+  "author": "David Rodenas <david.rodenas@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/drpicox/async-barrier/issues"
+  },
+  "homepage": "https://github.com/drpicox/async-barrier#readme",
+  "devDependencies": {
+    "eslint-plugin-prettier": "^2.5.0",
+    "husky": "^0.14.3",
+    "jest": "^22.1.4",
+    "lint-staged": "^6.1.0",
+    "prettier": "^1.10.2"
+  },
+  "lint-staged": {
+    "*.{js,json,css,md}": [
+      "prettier --write",
+      "git add"
+    ]
+  }
+}
